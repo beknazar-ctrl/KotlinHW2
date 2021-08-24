@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:layout_above="@+id/btn_random"
+        tools:listitem="@layout/item_list" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ed_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginEnd="@dimen/marginEndEt"
+        android:layout_marginBottom="25dp"
+        android:hint="@string/type"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/edSize" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ed_url"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:text="@string/submit"
+        android:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_random"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_submit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd"
+        android:text="@string/random"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

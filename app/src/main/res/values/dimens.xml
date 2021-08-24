@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginEndEt">16dp</dimen>
+    <dimen name="top">4dp</dimen>
+    <dimen name="edSize">21sp</dimen>
+    <dimen name="marginStart">16dp</dimen>
+    <dimen name="marginEnd">16dp</dimen>
+</resources>
